@@ -1,4 +1,4 @@
-# <p align="center"> <img  alt="TidyPHP" width="310" height="100"  src="public/images/TidyPHP.png" draggable="false" /> </p>
+# <p align="center"> <img  alt="TidyPHP" width="310" height="100"  src="public/assets/images/TidyPHP.png" draggable="false" /> </p>
 
 **_TidyPHP_** is a micro MVC PHP Framework made to understand how PHP Frameworks work behind the scense and build fast and tidy php web applications.
 

@@ -6,7 +6,17 @@ This framework made for learning prupose and may have some issues and still unde
 
 ## Getting Started 
 
+Run this command from any directory to install new TidyPHP Application. Required PHP 7.4.7 or newer.
 
+```bash
+composer create-project tidyphp/tidyphp [app-name]
+```
+Replace ``[app-name]`` with your need directory name for your new application.
+and to run the application for development you must start from ``public`` path. or simply do this.
+```bash
+cd [app-name] 
+composer serve
+```
 
 ## Documentation
 

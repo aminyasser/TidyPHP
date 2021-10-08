@@ -53,7 +53,7 @@ you can use two methods ``get`` or ``post`` . if you want to go ``yoururl/profil
 <?php
 
 use App\Controllers\HomeController;
-use Src\Http\Route;
+use Tidy\Http\Route;
 
 Route::get('/profile' , function() {
      return view('home');
@@ -68,7 +68,7 @@ you can also accept paramters in your route and nameing the route to get the rou
 <?php
 
 use App\Controllers\HomeController;
-use Src\Http\Route;
+use Tidy\Http\Route;
 
 Route::get('/user/{id}', [HomeController::class , 'user'])->name('user.profile');
 
@@ -180,7 +180,7 @@ if i have ``main/index.php`` path and i need to path to it all users and apply m
 namespace App\Controllers;
 
 use App\Models\User;
-use Src\View\View;
+use Tidy\View\View;
 
 class HomeController {
 
@@ -229,8 +229,8 @@ in HomeController , ``store()`` method we do our validation and use ``request()`
 namespace App\Controllers;
 
 use App\Models\User;
-use Src\Http\Request;
-use Src\View\View;
+use Tidy\Http\Request;
+use Tidy\View\View;
 
 class HomeController {
     public function store (Request $request , $id ) {
@@ -293,7 +293,7 @@ to runing database queries must use the powerfull ``DB`` class. you can execute 
 
 in example we are in controller and we need to get all of users table , we can use the `DB` like this.
 ```php 
-use Src\Database\DB;
+use Tidy\Database\DB;
 // App/Controllers/HomeCotroller.php
 class HomeController {
   public function index () {
@@ -373,7 +373,7 @@ but you can simply override the default by ``$table`` property .
 <?php 
 namespace App\Models;
 
-use Src\Database\Model\Model;
+use Tidy\Database\Model\Model;
 
 class User extends Model {
      protected static $table = 'my_users';
